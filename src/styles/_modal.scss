@@ -1,0 +1,47 @@
+@use 'variables';
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:rgb(variables.$corFundo,0.7);
+    transition: opacity 0.5s ease;
+  }
+  
+  .modal.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-content {
+    background-color:variables.$corFundoModal;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid variables.$corBordaModal;
+    width: 50%;
+  }
+  
+  .close {
+    color: variables.$corButton;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: variables.$corFundo;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .fechar{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }

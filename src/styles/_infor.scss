@@ -1,0 +1,58 @@
+.infor{
+padding: 5.6vw;
+ h2{
+    text-align: center;
+    margin-bottom: 24px;
+ }
+ &__box{
+    &__item{
+        background-color: #13151d;
+         margin-bottom: 16px;
+        &__cubo{
+            
+            height: 0;
+            overflow: hidden;
+            
+            img{
+                height: 100%;
+            }
+            
+        }
+        
+        
+ 
+        &__controle{
+            position: relative;
+            color:azure;
+            cursor: pointer;
+            &::after{
+                content: '+';
+                position: absolute;
+                top:0;
+                right: 24px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 40px;
+            }
+        }
+        &--is-open{
+            .infor__box__item__controle::after{
+                content: '-';
+            }
+           .infor__box__item__cubo{
+            height: auto;
+            padding: 24px;
+            
+            img{
+                height: 100%;
+            }
+
+           }   
+           
+        }
+    }
+
+ }
+
+}

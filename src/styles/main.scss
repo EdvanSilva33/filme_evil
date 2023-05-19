@@ -1,0 +1,29 @@
+
+@use 'hero'; 
+@use 'header';
+@use 'reset';
+@use 'variables';
+@use 'infor';
+@use 'modal';
+
+body{
+    font-family: Lumiere-One, sans-serif;
+    color:variables.$corFont;
+   /* Oculta a barra de rolagem vertical */
+&::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+  }
+  
+  /* Estiliza a "alça" da barra de rolagem */
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  /* Estiliza a "alça" da barra de rolagem quando o mouse está sobre ela */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+  }
+  
+    background-color: variables.$corFundo;
+}
