@@ -1,0 +1,57 @@
+@use 'variables';
+
+.infor__block{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 16px;
+  &__content{
+    position: relative;
+      width: 100%;
+      cursor: pointer;
+      &__overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        transition: .5s ease;
+      
+      }
+      &:hover &__overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      &__nomes{
+        margin-top: 15px;
+        text-align: center;
+        font-family: sans-serif;
+        
+        
+      }
+      &--efeito{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+      }
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    object-fit: cover;
+  }
+}

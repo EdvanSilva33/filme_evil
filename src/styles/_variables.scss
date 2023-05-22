@@ -2,10 +2,17 @@ $corFundo:#000;
 $corButton:#870c00;
 $corMenu:#1d1a17;
 $corFont:#fff;
+$corBlueGrey:#13151d;
 $corFundoModal:#fefefe;
 $corBordaModal:#888;
 $corOpacityModal:rgba(0, 0, 0, 0.801);
-
+$transtionAnimateFirst:rgba(255, 255, 255, 0.1);
+$transtionAnimateSecond:rgba(255, 255, 255, 0.6);
+$transtionAnimateThird:rgba(255, 255, 255, 0.25);
+$transtionAnimateFour:rgba(255, 255, 255, 0.35);
+$transitionAnimateFive:rgba(255, 255, 255, 0.40);
+$transitionAnimateSix:rgba(255, 255, 255, 0.45);
+$transitionAnimateSeven:rgba(255, 255, 255, 0.55);
 
 @font-face {
     font-family:Lumiere-One ;
@@ -16,4 +23,12 @@ $corOpacityModal:rgba(0, 0, 0, 0.801);
     font-family: Lumiere-one;
     src: url(../../assets/fonts/Lumiere-One.woff2);
     font-weight: 700;
+}
+@font-face {
+    font-family:kanit-regular ;
+    src: url(../../assets/fonts/Kanit-Regular.ttf);
+}
+@font-face {
+    font-family: Kanit-bold;
+    src: url(../../assets/fonts/Kanit-Bold.ttf);
 }

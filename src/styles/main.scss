@@ -5,6 +5,9 @@
 @use 'variables';
 @use 'infor';
 @use 'modal';
+@use 'elecon';
+@use 'sobre';
+@use 'animation';
 
 body{
     font-family: Lumiere-One, sans-serif;
@@ -24,6 +27,15 @@ body{
   &::-webkit-scrollbar-thumb:hover {
     background-color: transparent;
   }
-  
-    background-color: variables.$corFundo;
+ 
+  background-color: variables.$corFundo;
+ 
+    
+}
+
+.footer{
+  background-color: variables.$corFundo;
+  img{
+    width: 200px;
+  }
 }
