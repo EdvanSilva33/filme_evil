@@ -1,6 +1,7 @@
 
 @use 'hero'; 
 @use 'header';
+@use 'rodape';
 @use 'reset';
 @use 'variables';
 @use 'infor';
@@ -27,15 +28,10 @@ body{
   &::-webkit-scrollbar-thumb:hover {
     background-color: transparent;
   }
- 
+  
+  
   background-color: variables.$corFundo;
  
     
 }
 
-.footer{
-  background-color: variables.$corFundo;
-  img{
-    width: 200px;
-  }
-}

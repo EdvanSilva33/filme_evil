@@ -263,5 +263,30 @@
   }
   
   
-// 	animation: animation--tex 3.2s infinite normal cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-// }
+
+
+.animation-footer {
+	-webkit-animation: animation-footer 4.3s  infinite normal cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: animation-footer 4.3s  infinite normal cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes animation-footer {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes animation-footer {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}

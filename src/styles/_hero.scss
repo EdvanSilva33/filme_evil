@@ -3,6 +3,13 @@
 .hero{
     
     background-image: url("../../../dist/img/bg.jpg");
+   
+    @media (max-width:768px) and (max-width: 1023px) {
+        background-image: url("../../dist/img/bg-ipad.png");
+        background-size: contain;
+
+        
+    }
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 5.6vw;
@@ -47,6 +54,9 @@ font-family:Lumiere-One, sans-serif ;
 font-size: 16px;
 background-color: variables.$corButton;
 cursor: pointer;
+    }
+    button:hover{
+        background-color:lighten(variables.$corButton, 7%);
     }
 }
 }

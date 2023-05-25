@@ -1,0 +1,41 @@
+
+.footer{
+
+@media (max-width:767px) {
+  img:nth-child(1){
+    display: none;
+    
+  }
+  img:nth-child(2){
+    width: 350px;
+  }
+}
+padding:2vh 5.6vw;
+text-align: center;
+font-family: sans-serif;
+font-weight: 600;
+text-transform: capitalize;
+&__container{
+  position: relative;
+  width: 1024px;
+
+  margin: 0 auto;
+
+  @media (min-width:767px) and (max-width:1023px){
+ 
+   img:nth-child(2){
+    width: 500px;
+  }
+  }
+  align-items: center;
+    justify-content:flex-start;
+    display: flex;
+        img:nth-child(1){
+            width: 120px;
+            object-fit: contain;
+        }
+      
+        
+      
+    }
+  }
