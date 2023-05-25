@@ -6,11 +6,9 @@
    
     @media (max-width:768px) and (max-width: 1023px) {
         background-image: url("../../dist/img/bg-ipad.png");
-        background-size: contain;
-
-        
+       
     }
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     padding-top: 5.6vw;
     min-height: 85vh;
